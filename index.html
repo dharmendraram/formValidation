@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <!-- Bootstrap cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+
+    <!-- custom css cdn link  -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container shadow rounded">
+      <div class="row">
+        <div class="col-lg-7 p-0 m-0">
+        <div class="img-bg p-4 d-flex justify-content-between flex-column">
+            <div class="img-logo">
+                <img src="/image/logo.png" height="90" alt="logo">
+            </div>
+            <div class="image text-center">
+              <img src="./image/illustration.svg" class="W-50" alt="image">
+            </div>
+            <div class="text text-center text-white fw-bold fs-5 pt-3">
+                Start for free $ get <br> attractive offers today !
+
+            </div>
+        </div>
+
+        </div>
+
+        <!-- form section start  -->
+        <div class="col-lg-5 p-0">
+          <form action="" id="form" class="justify-content-center">
+            <!-- social section start  -->
+            <div class="social-icon">
+                <div class="img-logo text-center">
+                  <img src="./image/logo-black.png" height="90" width="90" alt="logo">
+                </div>
+                <p class="text-center p-0 m-0 login-text">Login to your Account </p>
+                <div class="question text-center">
+                    Already Have an Account?
+                   <div class="d-flex justify-content-center text-center gap-4">
+                    <div class="d-flex gap-2 align-items-center" onclick="actionShow()">
+                    <input class="employee" type="radio" name="employee" id="employee" value="employee"><label for="employee" class="m-0 job">Job Seeker</label>
+                  </div>
+    
+                  <div class="employer d-flex gap-2 align-items-center" onclick="actionHide()">
+                    <input type="radio" class="employee" name="employee" id="employer" value="employer"><label for="employer" class="m-0 job">Company</label>
+                  </div>
+                   </div>
+                </div>
+        
+        <!-- job seeker section start  -->
+                
+        <div id="job">
+                <div class="d-flex gap-5 p-0 pt-3 pb-2 justify-content-center m-0">
+                    <div class="btn-1 text-center">
+                        <img src="./image/google.png" width="45" alt="google" title="google">
+                        
+                    </div>
+                    <div class="btn-1 ">
+                        <img src="./image/linkedin.png" width="45" alt="linkedin" title="linkedin">
+                       
+                    </div>
+                </div>
+                <div class="or text-center fs-5 py-2">Or</div>
+          </div>
+            <!-- email input  -->
+
+                <!-- <label for="email">Email</label> -->
+              <div class="box">
+                <div class="inputBox">
+                  <input type="email" name="email" required="" onkeyup="this.setAttribute('value', this.value);" value="">
+                  <label>E-mail address or telephone number</label>
+                </div>
+              </div>
+            
+            <!-- password input  -->
+
+            <div class="box">
+              <div class="inputBox">
+                <input type="text" name="password" required="" onkeyup="this.setAttribute('value', this.value);" value="">
+                <label>Password</label>
+              </div>
+              </div>
+
+              <!-- forgot section here  -->
+
+              <div class="forgot">
+                <button type="button">Forgot your email?</button>
+              </div>
+            </div>
+              <!-- submit here  -->
+              <div class=" text-end">
+            <button type="submit" id="submit" class="button">Log In</button>
+          </div>
+        </div>
+
+        <!-- job seeker section start  -->
+
+     
+    <!-- Font Awesome cdn link  -->
+    <script
+      src="https://kit.fontawesome.com/116c26507a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom cdn js link  -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
