@@ -20,7 +20,7 @@
         
           <div class="img-bg p-4 d-flex justify-content-between flex-column">
             <div class="img-logo">
-                <img src="/image/logo.png" height="90" alt="logo">
+               <a href="index.html"> <img src="/image/logo.png" height="90" alt="logo"></a>
             </div>
             <div class="image text-center">
               <img src="./image/illustration.svg" class="W-50" alt="image">
@@ -38,26 +38,41 @@
           <form action="" id="form" class="justify-content-center">
             <!-- social section start  -->
             <div class="social-icon">
-             <div class="img-logo text-center">
-              <a href="index.html"><img src="./image/logo-black.png" height="90" width="90" alt="logo"></a>
+                <div class="img-logo text-center">
+                  <a href="index.html"><img src="./image/logo-black.png" height="90" width="90" alt="logo"></a>
                 </div>
-              
-                  <p class="text-center p-0 m-0 login-text">Login to your Account </p>
+                  <p class="text-center p-0 m-0 login-text">Sign Up ?</p>
                 <div class="question text-center">
                     Already Have an Account?
                    <div class="d-flex justify-content-center text-center gap-4">
-                    <div class="d-flex gap-2 align-items-center">
-                    <input class="employee" type="radio" name="employee" id="employee" value="employee"><label for="employee" class="m-0 job"><a href="jobseeker.html" target="_self" class="text-decoration-none">Job Seeker</a></label>
+                    <div class="d-flex gap-2 align-items-center" onclick="actionShow()">
+                  <label for="employee" class="m-0 job"><a href="jobseeker.html"target="_self"class="text-decoration-none">Job Seeker</a></label>
                   </div>
-               
-                  <div class="employer d-flex gap-2 align-items-center">
-                    <input type="radio" class="employee" name="employee" id="employer" value="employer"><label for="employer" class="m-0 job"><a href="company.html" target="_self"class="text-decoration-none">Company</a></label>
+    
+                  <div class="employer d-flex gap-2 align-items-center d-none">
+                    <input type="radio" class="employee" name="employee" id="employer" value="employer"><label for="employer" class="m-0 job"><a href="company.html" target="_self" class="text-decoration-none">Company</a> </label>
                   </div>
                    </div>
                 </div>
         
 
-        <!-- job seeker section start  -->    
+        <!-- job seeker section start  -->
+                
+            <div id="job">
+                <div class="d-flex gap-5 p-0 pt-3 pb-2 justify-content-center m-0">
+                    <div class="btn-1 text-center">
+                        <img src="./image/google.png" width="45" alt="google" title="google">
+                        
+                    </div>
+                    <div class="btn-1 ">
+                        <img src="./image/linkedin.png" width="45" alt="linkedin" title="linkedin">
+                       
+                    </div>
+                </div>
+                <div class="or text-center fs-5 py-2">Or</div>
+             </div>
+            <!-- email input  -->
+
                 <!-- <label for="email">Email</label> -->
               <div class="box">
                 <div class="inputBox">
@@ -75,15 +90,19 @@
               </div>
               </div>
 
+              <!-- conform password  -->
+              <div class="box">
+                <div class="inputBox">
+                  <input type="text" name="conformpassword" required="" onkeyup="this.setAttribute('value', this.value);" value="">
+                  <label>Conform Password</label>
+                </div>
+                </div>
+
               <!-- forgot section here  -->
 
-              <div class="forgot">
-                <button type="button">Forgot your email?</button>
-              </div>
-            </div>
               <!-- submit here  -->
              <div class=" text-end">
-            <button type="submit" id="submit" class="button">Log In</button>
+            <button type="submit" id="submit" class="button">Sign Up</button>
              </div>
 
           </form>
@@ -92,7 +111,7 @@
         <!-- job seeker section start  -->
 
      
-    <!-- Font Awesome cdn link  -->
+    <!-- Font Awesome cdn link -->
     <script
       src="https://kit.fontawesome.com/116c26507a.js"
       crossorigin="anonymous"
